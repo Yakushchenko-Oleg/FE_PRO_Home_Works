@@ -8,9 +8,7 @@
  const body = document.querySelector('body')
 
  const renderCard = (users) => {
-     const slicedUsers = users.users.slice(0, 15)
-     
-     slicedUsers.forEach(el => {
+     users.users.slice(0, 15).forEach(el => {
          const cartContainer = document.createElement('div')
          cartContainer.classList.add('cartContainer')
          const firstName = document.createElement('h3')
