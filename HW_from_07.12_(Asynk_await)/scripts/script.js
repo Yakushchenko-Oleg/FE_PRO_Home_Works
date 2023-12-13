@@ -38,7 +38,7 @@ const fetchUsers = async (data) => {
 
             const res = await fetch(`https://dummyjson.com/users/${posts.userId}`)
             const users = await res.json()
-            console.log(users);
+        
 
             const userImage = users.image
             const userName = users.firstName
@@ -60,13 +60,13 @@ const fetchPosts = async (callback) => {
 
 fetchPosts(fetchUsers)
 
-const fotm = document.querySelector('#form1')
+// const fotm = document.querySelector('#form1')
 
 
 
-const formInput = document.querySelector('.formInput')
-const postText = formInput.value
-console.log(formInput.value);
+// const formInput = document.querySelector('.formInput')
+// const postText = formInput.value
+// console.log(formInput.value);
 
 
 // form.addEventListener('submit', (event) => {
