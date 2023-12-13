@@ -60,6 +60,9 @@ const fetchPosts = async (callback) => {
 
 fetchPosts(fetchUsers)
 
+// К сожпдению файл css слетел и его не удалось восстановить полность., по этому стили не все.
+
+
 // const fotm = document.querySelector('#form1')
 
 
