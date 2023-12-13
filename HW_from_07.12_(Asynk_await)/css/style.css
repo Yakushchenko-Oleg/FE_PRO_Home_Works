@@ -1,5 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.postsBody {
+    gap: 5px;
+}
+.postContainer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.postUsersCont {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+
+.postCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.postUserImage {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 50px;
+
 }
