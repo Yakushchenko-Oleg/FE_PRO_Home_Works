@@ -1,0 +1,96 @@
+@use 'var';
+
+.header__top {
+    height: 45px;
+    background-color: var.$bg-dark-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+    &_tytle {
+        color: var.$light-font-color;
+        font-family: var.$primary-font;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        // display: flex;
+        position: absolute;
+        margin: 0 auto;
+    }
+
+    &__btn-container {
+
+        position: absolute;
+        display: flex;
+
+        .btn__currency {
+            color: var.$light-font-color;
+            font-family: var.$primary-font;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        .btn__support {
+            color: var.$light-font-color;
+            font-family: var.$primary-font;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+    }
+}
+
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    .header__container_logo-wraper {
+        .header__container_logo {
+        } 
+        .greenTitle {
+        }
+    }
+    .header__container_nav {
+        ul{
+            li{
+
+            }
+        }
+    }
+    .header__container_search-cont {
+        h4{
+
+        }
+        input{
+            
+        }
+    }
+    .header__container_cart-wraper {
+        .Btn-To-Cart {
+         }
+        .items-in-Cart {
+        }   
+    }
+
+}
+
+.header__container_cart-wraper {
+}
+
+
+
+
+// .BtnToCart {
+// }
+// .imens_nCrt {
+// }
+// .home-page {
+// }
+// .section__moto {
+// }
+// .section__par {
+// }
+// .section_button {
+// }
