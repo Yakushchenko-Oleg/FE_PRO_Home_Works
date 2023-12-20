@@ -1,10 +1,10 @@
 @use "globals";
 @use 'var';
 @use 'mixin';
-
+@use "header";
 body{
     width: 1400px;
 }
-@import "header";
+
 
 

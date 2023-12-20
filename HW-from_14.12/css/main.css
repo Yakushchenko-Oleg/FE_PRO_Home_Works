@@ -8,10 +8,6 @@
   font-weight: 400;
 }
 
-body {
-  width: 1400px;
-}
-
 .header__top {
   height: 45px;
   background-color: #50806B;
@@ -26,11 +22,17 @@ body {
   font-weight: 600;
   letter-spacing: 0.5px;
   position: absolute;
-  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .header__top__btn-container {
   position: absolute;
+  right: 148px;
+  top: 50%;
+  transform: translate(0, -50%);
   display: flex;
+  gap: 23px;
 }
 .header__top__btn-container .btn__currency {
   color: #FFF;
@@ -38,6 +40,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
+  background: none;
 }
 .header__top__btn-container .btn__support {
   color: #FFF;
@@ -45,9 +48,91 @@ body {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  background: none;
 }
 
 .header__container {
+  position: relative;
+  height: 61px;
+}
+.header__container_logo-wraper {
+  position: absolute;
+  left: 86px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.header__container_logo-wraper_logo {
+  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+.header__container_logo-wraper span {
+  color: #50806B;
+}
+.header__container_nav {
+  width: 594px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__container_nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.header__container_nav ul li {
+  color: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+.header__container_right-side-wraper {
+  display: flex;
+  position: absolute;
+  right: 148px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.header__container_right-side-wraper .header__container_search-cont {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.header__container_right-side-wraper .header__container_search-cont h4 {
+  color: #979797;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+.header__container_right-side-wraper .header__container_search-cont input {
+  height: 22px;
+  width: 22px;
+  margin-right: 25px;
+}
+.header__container_right-side-wraper .header__container_cart-cont {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #000;
+  height: 46px;
+  padding-left: 25px;
+  gap: 8px;
+}
+.header__container_right-side-wraper .header__container_cart-cont .button {
+  height: 21px;
+  width: 18px;
+}
+.header__container_right-side-wraper .header__container_cart-cont .h4 {
+  color: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+body {
+  width: 1400px;
 }/*# sourceMappingURL=main.css.map */

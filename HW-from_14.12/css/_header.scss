@@ -14,15 +14,19 @@
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 0.5px;
-        // display: flex;
         position: absolute;
-        margin: 0 auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
     }
 
     &__btn-container {
-
         position: absolute;
+        right: 148px;
+        top: 50%;
+        transform: translate(0,-50%);
         display: flex;
+        gap: 23px;
 
         .btn__currency {
             color: var.$light-font-color;
@@ -30,6 +34,7 @@
             font-size: 16px;
             font-weight: 400;
             letter-spacing: 0.5px;
+            background: none;
         }
         .btn__support {
             color: var.$light-font-color;
@@ -37,60 +42,93 @@
             font-size: 16px;
             font-weight: 700;
             letter-spacing: 0.5px;
+            background: none;
         }
-
     }
 }
 
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    .header__container_logo-wraper {
-        .header__container_logo {
-        } 
-        .greenTitle {
-        }
-    }
-    .header__container_nav {
-        ul{
-            li{
+    position: relative;
+    height: 61px;
 
+    &_logo-wraper {
+        position: absolute;
+        left: 86px;
+        top: 50%;
+        transform: translate(0,-50%);
+        &_logo {
+            font-family: var.$secondary-font;
+            font-family: var.$primary-font;
+            font-size: 26px;
+            font-weight: 600;
+            letter-spacing: -0.6px;
+           
+        }  
+         span {
+            color: var.$span-font-color;
+            }
+    }
+    &_nav {
+        width: 594px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                color: var.$primary-font;
+                font-family: var.$primary-font;
+                padding: 10px;
+                font-size: 17px;
+                font-weight: 400;
+                letter-spacing: -0.6px;
             }
         }
     }
-    .header__container_search-cont {
-        h4{
-
+    &_right-side-wraper {
+        display: flex;
+        position: absolute;
+        right: 148px;
+        top: 50%;
+        transform: translate(0,-50%);
+        
+        .header__container_search-cont {
+            display: flex;
+            align-items: center;
+            gap:  11px;
+            h4{
+                color: var.$secondary-gray-font-color;
+                font-family: var.$primary-font;
+                font-size: 17px;
+                font-weight: 400;
+                letter-spacing: -0.6px;
+            }
+            input {
+                height: 22px;
+                width: 22px;
+                margin-right: 25px;
+            }
         }
-        input{
-            
+        .header__container_cart-cont{    
+            display: flex;
+            align-items: center;
+            border-left: 1px solid #000; 
+            height: 46px;
+            padding-left: 25px;  
+            gap: 8px;      
+            .button {
+                height: 21px;
+                width: 18px;
+            }
+            .h4 {
+                color: var.$primary-font;
+                font-family: var.$primary-font;
+                font-size: 17px;
+                font-weight: 400;
+            } 
         }
     }
-    .header__container_cart-wraper {
-        .Btn-To-Cart {
-         }
-        .items-in-Cart {
-        }   
     }
-
-}
-
-.header__container_cart-wraper {
-}
-
-
-
-
-// .BtnToCart {
-// }
-// .imens_nCrt {
-// }
-// .home-page {
-// }
-// .section__moto {
-// }
-// .section__par {
-// }
-// .section_button {
-// }
