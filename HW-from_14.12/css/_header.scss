@@ -1,5 +1,8 @@
 @use 'var';
 
+header{
+    z-index: 10;
+
 .header__top {
     height: 45px;
     background-color: var.$bg-dark-color;
@@ -59,10 +62,11 @@
         transform: translate(0,-50%);
         &_logo {
             font-family: var.$secondary-font;
-            font-family: var.$primary-font;
+            flood-color:  var.$primary-font-color;
             font-size: 26px;
             font-weight: 600;
             letter-spacing: -0.6px;
+            line-height: normal;
            
         }  
          span {
@@ -80,7 +84,7 @@
             justify-content: space-around;
             li{
                 color: var.$primary-font;
-                font-family: var.$primary-font;
+                font-family: var.$primary-font-color;
                 padding: 10px;
                 font-size: 17px;
                 font-weight: 400;
@@ -132,3 +136,4 @@
         }
     }
     }
+}

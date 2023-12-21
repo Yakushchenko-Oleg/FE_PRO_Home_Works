@@ -1,0 +1,94 @@
+@use 'var';
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    background-color: var.$secondary-bg-light-color;
+    z-index: 3;
+    position: relative;
+    &__bg-cont_left {
+        background-image: url(../img/homePage-img/main__bgi-left.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        // background-size: cover;
+        height: 464px;
+        width: 428px;
+        transform: rotate(90deg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__bg-cont_right {
+        background-image: url(../img/homePage-img/main__bgi-right.png);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1043px;
+        height: 801px;
+        z-index: 1;
+    }
+    &__blur-container{
+        height: 730px;
+         width: 594px;
+         background: rgba(80, 128, 107, 0.20);
+         
+         backdrop-filter: blur(20px);
+         z-index: 0;
+         margin: 0 auto;
+        section {
+            height: 100%;
+            width: 100%;
+
+            z-index: 5;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                h2 {
+                    color: var.$primary-font-color;
+                    font-family: var.$secondary-font;                
+                    font-size: 80px;
+                    font-weight: 600;
+                    line-height: 80px; 
+                    letter-spacing: 2.4px;
+                    padding: 157px 26px 0 26px;
+                    z-index: 2;
+                    text-align: center;
+                    margin: auto;
+                }
+                p {
+                    color: var.$primary-font-color;
+                    font-family: var.$secondary-font;
+                    font-size: 22px;
+                    font-weight: 400;
+                    padding: 38px 80px;
+                }
+                button {
+                    color: var.$primary-font-color;
+                    font-family: var.$primary-font;
+                    text-align: center;
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    letter-spacing: -0.4px;
+                    text-transform: uppercase;
+                    padding: 24px 56px;
+                    border-radius: 20px;
+                    background: var.$light-font-color;   
+                    margin-bottom: 158px;
+                }   
+        }
+    }    
+    &__footer {
+        height: 38px;
+        border: none;
+        background-color: var.$bg-dark-color;
+    }   
+}
+
+

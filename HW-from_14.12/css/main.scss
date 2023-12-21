@@ -1,7 +1,10 @@
 @use "globals";
-@use 'var';
 @use 'mixin';
 @use "header";
+@use 'home-page';
+@use 'categories';
+
+
 body{
     width: 1400px;
 }
